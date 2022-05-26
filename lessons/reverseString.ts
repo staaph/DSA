@@ -11,4 +11,10 @@ const reverse = (str: string) => {
   return backwards.join('');
 };
 
-const reverse2 = (str: any) =>  [...str].reverse().join('')
+//builtin using spread 
+const reverse2 = (str: any) => [...str].reverse().join('');
+
+//recursion
+const reverse3 = (myString: string) => {
+  return myString ? reverse(myString.substr(1)) + myString[0] : myString;
+};
