@@ -16,5 +16,5 @@ const reverse2 = (str: any) => [...str].reverse().join('');
 
 //recursion
 const reverse3 = (myString: string) => {
-  return myString ? reverse(myString.substr(1)) + myString[0] : myString;
+  return myString ? reverse(myString.substring(1)) + myString[0] : myString;
 };
