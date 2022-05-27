@@ -1,8 +1,8 @@
-const sortArray = (arr: number[]) => {
+export const sortArray = (arr: number[]) => {
   return arr.sort((a, b) => a - b);
 };
 
-const sortArraytoGreatest = (arr: number[]) => {
+export const sortArraytoGreatest = (arr: number[]) => {
   for (let i = arr.length - 1; i >= 0; i--) {
     for (let j = i; j >= 0; j--) {
       if (arr[i] < arr[j]) {
@@ -15,7 +15,7 @@ const sortArraytoGreatest = (arr: number[]) => {
   return arr;
 };
 
-const sortArrayToLeast = (arr: number[]) => {
+export const sortArrayToLeast = (arr: number[]) => {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i; j < arr.length; j++) {
       if (arr[i] < arr[j]) {
