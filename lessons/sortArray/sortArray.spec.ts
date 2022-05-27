@@ -15,7 +15,7 @@ describe('sortArraytoGreatest', () => {
 });
 
 describe('sortArrayToLeast', () => {
-  it('should sort the array in decreasing order', () => {
+  it('should sort the array in descending order', () => {
     expect(sortArrayToLeast([3, 1, 6])).toEqual([6, 3, 1]);
     expect(sortArrayToLeast([-4, -2, 4, 7])).toEqual([7, 4, -2, -4]);
   });

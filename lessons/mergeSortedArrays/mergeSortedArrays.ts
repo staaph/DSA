@@ -1,4 +1,4 @@
-const mergeSortedArrays = (array1: number[], array2: number[]) => {
+export const mergeSortedArrays = (array1: number[], array2: number[]) => {
   const mergedArray = [];
   let array1Item = array1[0];
   let array2Item = array2[0];
@@ -26,5 +26,5 @@ const mergeSortedArrays = (array1: number[], array2: number[]) => {
   return mergedArray;
 };
 
-const mergeSortedArrays2 = (arr1: number[], arr2: number[]) =>
+export const mergeSortedArrays2 = (arr1: number[], arr2: number[]) =>
   [...arr1, ...arr2].sort((a, b) => a - b);
