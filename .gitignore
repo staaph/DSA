@@ -1,10 +1,7 @@
 #general
 .DS_STORE
 .vscode/*
-tsconfig.json
-.eslintrc.js
 
 # node
-package.json
 package-lock.json
 node_modules
