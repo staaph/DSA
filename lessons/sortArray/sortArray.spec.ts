@@ -1,22 +1,27 @@
-import { sortArray, sortArraytoGreatest, sortArrayToLeast } from './sortArray';
+import { sortArray, sortArraytoGreatest, sortArrayToLeast } from './sortArray'
+
+const input1 = [3, 1, 6, 4]
+const output1 = [1, 3, 4, 6]
+const input2 = [-2, -5, 4, 15]
+const output2 = [-5, -2, 4, 15]
 
 describe('sortArray', () => {
   it('should sort the array in ascending order', () => {
-    expect(sortArray([3, 1, 6, 4])).toEqual([1, 3, 4, 6]);
-    expect(sortArray([-2, -5, 4, 15])).toEqual([-5, -2, 4, 15]);
-  });
-});
+    expect(sortArray(input1)).toEqual(output1)
+    expect(sortArray(input2)).toEqual(output2)
+  })
+})
 
 describe('sortArraytoGreatest', () => {
   it('should sort the array in ascending order', () => {
-    expect(sortArraytoGreatest([3, 1, 6, 4])).toEqual([1, 3, 4, 6]);
-    expect(sortArraytoGreatest([-2, -5, 4, 15])).toEqual([-5, -2, 4, 15]);
-  });
-});
+    expect(sortArraytoGreatest(input1)).toEqual(output1)
+    expect(sortArraytoGreatest(input2)).toEqual(output2)
+  })
+})
 
 describe('sortArrayToLeast', () => {
   it('should sort the array in descending order', () => {
-    expect(sortArrayToLeast([3, 1, 6])).toEqual([6, 3, 1]);
-    expect(sortArrayToLeast([-4, -2, 4, 7])).toEqual([7, 4, -2, -4]);
-  });
-});
+    expect(sortArrayToLeast([3, 1, 6])).toEqual([6, 3, 1])
+    expect(sortArrayToLeast([-4, -2, 4, 7])).toEqual([7, 4, -2, -4])
+  })
+})
